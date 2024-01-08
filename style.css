@@ -121,7 +121,9 @@ ul {
 
 /* Drag and Drop */
 .over {
+  transition: all 1s ease;
   padding: 50px 10px;
+  border-radius: 15px;
 }
 
 .drag-item-list {

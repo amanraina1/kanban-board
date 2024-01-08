@@ -122,10 +122,14 @@ function updateDOM() {
 function updateItem(id, column) {
   const selectedArray = listArrays[column];
   const selectedColumnEl = listColumns[column].children;
-  if (!selectedColumnEl[id].textContent) {
-    delete selectedArray[id];
+  if (!dragging) {
+    if (!selectedColumnEl[id].textContent) {
+      delete selectedArray[id];
+    } else {
+      selectedArray[id] = selectedColumnEl[id].textContent;
+    }
+    updateDOM();
   }
-  updateDOM();
 }
 
 // Add to the column
@@ -177,7 +181,6 @@ function rebuildArrays() {
 function drag(e) {
   draggedItem = e.target;
   dragging = true;
-  //   console.log(draggedItem);
 }
 
 //When items enter column area
