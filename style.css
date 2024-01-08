@@ -29,10 +29,7 @@ h1 {
 
 h3,
 .btm-text {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translate(-50%);
+  text-align: center;
 }
 
 .main-title {
