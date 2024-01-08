@@ -27,6 +27,14 @@ h1 {
   text-shadow: 2px 2px 5px black;
 }
 
+h3,
+.btm-text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
 .main-title {
   text-align: center;
   font-size: 3rem;
@@ -121,7 +129,7 @@ ul {
 
 /* Drag and Drop */
 .over {
-  transition: all 1s ease;
+  transition: all 0.3s ease;
   padding: 50px 10px;
   border-radius: 15px;
 }

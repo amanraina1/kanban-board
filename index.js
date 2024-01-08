@@ -135,6 +135,7 @@ function updateItem(id, column) {
 // Add to the column
 function addToColumn(column) {
   const itemText = addItems[column].textContent;
+  if (itemText === "") return;
   const selectedArray = listArrays[column];
   selectedArray.push(itemText);
   addItems[column].textContent = "";
